@@ -1,0 +1,45 @@
+{
+  "name": "brand-guard",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.57.0",
+    "@sendgrid/mail": "^8.1.5",
+    "@supabase/auth-ui-react": "^0.4.7",
+    "@supabase/auth-ui-shared": "^0.1.8",
+    "@supabase/ssr": "^0.7.0",
+    "@supabase/supabase-js": "^2.52.1",
+    "docx": "^9.5.1",
+    "get-image-colors": "^4.0.1",
+    "google-auth-library": "^10.1.0",
+    "googleapis": "^154.0.0",
+    "mammoth": "^1.9.1",
+    "multer": "^2.0.2",
+    "next": "15.4.3",
+    "pdf-parse": "^1.1.1",
+    "pdf2pic": "^3.2.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "sharp": "^0.34.3",
+    "tesseract.js": "^5.1.1",
+    "vercel": "^46.1.1"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/get-image-colors": "^4.0.5",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.4.3",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}

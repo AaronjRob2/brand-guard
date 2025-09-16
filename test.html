@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Guard Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            color: white;
+        }
+        .container {
+            text-align: center;
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+        .success {
+            background: green;
+            color: white;
+            padding: 1rem;
+            border-radius: 5px;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🛡️ Brand Guard</h1>
+        <div class="success">✅ SUCCESS! Web server is working!</div>
+        <p>If you can see this page, the networking is functioning correctly.</p>
+        <p><strong>Next.js should work on the same port.</strong></p>
+        <hr>
+        <p>Current time: <span id="time"></span></p>
+        <p>Your IP: <span id="ip">Loading...</span></p>
+    </div>
+    
+    <script>
+        // Update time
+        document.getElementById('time').textContent = new Date().toLocaleString();
+        
+        // Try to get IP (will work if CORS allows)
+        fetch('https://api.ipify.org?format=json')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('ip').textContent = data.ip;
+            })
+            .catch(() => {
+                document.getElementById('ip').textContent = 'Unable to fetch';
+            });
+    </script>
+</body>
+</html>

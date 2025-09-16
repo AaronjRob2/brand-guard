@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls:*)",
+      "Bash(npm run dev:*)",
+      "Bash(pkill:*)",
+      "Bash(curl:*)",
+      "Bash(timeout 10s npm run dev:*)",
+      "Bash(npm run build:*)",
+      "Bash(rm:*)",
+      "Bash(wget:*)",
+      "Bash(PORT=3001 npm run dev)",
+      "Bash(env)",
+      "Bash(chmod:*)",
+      "Bash(crontab:*)",
+      "Bash(/home/aastro/brand-guard/backup-project.sh:*)",
+      "Bash(ss:*)",
+      "Bash(npx next:*)",
+      "Bash(HOST=0.0.0.0 PORT=3000 npm run dev)",
+      "Bash(DEBUG=*)",
+      "Bash(PORT=8080 npm run dev -- --hostname 0.0.0.0)"
+    ],
+    "deny": []
+  }
+}
